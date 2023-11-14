@@ -1,0 +1,14 @@
+.btn__sound {
+    width: 40px;
+    height: 43px;
+    cursor: pointer;
+    transition: transform ease-in 0.1s;
+}
+
+.btn__sound:hover {
+    transform: scale(1.10);
+}
+
+.btn__sound:active {
+    transform: scale(0.95);
+}

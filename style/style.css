@@ -59,5 +59,13 @@ body {
 }
 
 .btn {
-    margin: 0 auto;
+
+}
+
+.loading {
+
+}
+
+.hide {
+    display: none !important;
 }

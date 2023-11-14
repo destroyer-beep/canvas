@@ -1,6 +1,6 @@
 import {state} from "./utils/state.js";
 
-const btnSound = document.querySelector('.btn_sound');
+const btnSound = document.querySelector('#btn__sound');
 
 btnSound.addEventListener('click', e => {
     e.stopPropagation();

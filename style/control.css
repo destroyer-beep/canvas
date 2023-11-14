@@ -1,14 +1,18 @@
-.btn__sound {
-    width: 40px;
-    height: 43px;
+.btn {
+    display: inline-block;
     cursor: pointer;
     transition: transform ease-in 0.1s;
 }
 
-.btn__sound:hover {
+.btn:hover {
     transform: scale(1.10);
 }
 
-.btn__sound:active {
+.btn:active {
     transform: scale(0.95);
+}
+
+.btn__sound {
+    width: 40px;
+    height: 43px;
 }

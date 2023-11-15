@@ -1,19 +1,36 @@
 .btn {
-    margin: 0 auto;
-    display: inline-block;
     cursor: pointer;
     transition: transform ease-in 0.1s;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.btn:focus {
+    border: none;
+    background: none;
+    outline: none;
 }
 
 .btn:hover {
     transform: scale(1.10);
+    border: none;
+    background: none;
+    outline: none;
 }
 
 .btn:active {
     transform: scale(0.95);
+    border: none;
+    background: none;
+    outline: none;
 }
 
 .btn__sound {
     width: 40px;
     height: 43px;
+}
+
+.btn__center {
+    margin: 0 auto;
 }

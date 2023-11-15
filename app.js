@@ -6,6 +6,7 @@ const btnStart = document.querySelector('#btn__start');
 btnSound.addEventListener('click', e => {
     e.stopPropagation();
     state.sound = !state.sound;
+    console.log(state)
     if(state.sound) btnSound.src = "./img/game_control/sound.png";
     else btnSound.src = "./img/game_control/no_sound.png";
 });

@@ -7,27 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Русские предприниматели</title>
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/control.css">
 </head>
 <body>
-<div class="game__box">
-    <img class="game__box_img" src="./img/background_start.svg" alt="start">
-    <div class="game__box_content">
-        <div class="header">
-            <button class="btn">
-                <img id="btn__sound" class="btn__sound" src="./img/game_control/sound.png" alt="sound">
-            </button>
-        </div>
-        <div class="main">
-            <div class="loading">Загрузка...</div>
-        </div>
-        <div class="footer">
-            <div class="footer__container">
-                <button class="btn btn__center">
-                    <img id="btn__start" class="btn__start" src="img/game_control/play.png" alt="play">
-                </button>
-            </div>
-        </div>
+<div class="game__sound">
+    <img id="game__sound_img" src="./img/game_control/sound.png" alt="sound">
+</div>
+<div class="game">
+    <div class="game__wrapper">
+        <canvas id="root" width="600" height="920"></canvas>
     </div>
 </div>
 <script src="./app.js" type="module" defer></script>

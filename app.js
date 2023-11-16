@@ -1,25 +1,27 @@
-import {state, steps} from "./utils/state.js";
+import {state} from "./utils/state.js";
 
-const btnSound = document.querySelector('#btn__sound');
-const btnStart = document.querySelector('#btn__start');
+const soundImg = document.getElementById('game__sound_img');
+const canvas = document.getElementById('root');
+const ctx = canvas.getContext('2d');
 
-btnSound.addEventListener('click', e => {
-    e.stopPropagation();
+soundImg.addEventListener('click', () => {
     state.sound = !state.sound;
-    console.log(state)
-    if(state.sound) btnSound.src = "./img/game_control/sound.png";
-    else btnSound.src = "./img/game_control/no_sound.png";
-});
-
-btnStart.addEventListener('click', e => {
-    e.stopPropagation();
-    state.step = 'loading';
-    renderInterface();
+    if(state.sound) soundImg.src = './img/game_control/sound.png';
+    else soundImg.src = './img/game_control/no_sound.png';
 })
 
-function renderInterface() {
-    switch (state.step) {
-        case 'loading':
-            btnStart.classList.add('hide');
-    }
+function init() {
+    render()
+    requestAnimationFrame(init);
 }
+
+function render() {
+    ctx.font = "72px serif";
+    ctx.fillStyle = "white";
+    ctx.strokeStyle = "black";
+    ctx.textAlign = "center";
+    ctx.fillText("ЛОВИ ИХ!", canvas.width/2, canvas.height/2, );
+    ctx.strokeText("ЛОВИ ИХ!", canvas.width/2, canvas.height/2, );
+}
+
+init();
